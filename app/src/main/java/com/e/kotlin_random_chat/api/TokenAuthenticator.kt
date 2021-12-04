@@ -4,6 +4,7 @@ import com.e.kotlin_random_chat.api.response.ApiResponse
 import com.e.kotlin_random_chat.common.Prefs
 import com.e.kotlin_random_chat.common.clearTasksAndStartNewActivity
 import com.e.kotlin_random_chat.domain.auth.Auth
+import com.e.kotlin_random_chat.domain.signin.SigninActivity
 import kotlinx.coroutines.runBlocking
 import okhttp3.Authenticator
 import okhttp3.Request
@@ -41,7 +42,7 @@ class TokenAuthenticator : Authenticator {
             Auth.refreshToken(tokenResponse.data)
         }else{
             Auth.signout()
-            //clearTasksAndStartNewActivity<SigninActivity>()
+            clearTasksAndStartNewActivity<SigninActivity>()
         }
     }
 }

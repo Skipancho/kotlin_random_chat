@@ -3,6 +3,7 @@ package com.e.kotlin_random_chat.api
 import com.e.kotlin_random_chat.common.Prefs
 import com.e.kotlin_random_chat.common.clearTasksAndStartNewActivity
 import com.e.kotlin_random_chat.domain.auth.Auth
+import com.e.kotlin_random_chat.domain.signin.SigninActivity
 import okhttp3.Interceptor
 import okhttp3.Response
 
@@ -19,7 +20,7 @@ class RefreshTokenInterceptor : Interceptor {
 
         if (response.code() == 401){
             Auth.signout()
-            //clearTasksAndStartNewActivity<SigninActivity>()
+            clearTasksAndStartNewActivity<SigninActivity>()
         }
 
         return response
