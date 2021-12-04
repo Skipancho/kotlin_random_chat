@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Kotlin_random_chat"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".domain.randomchat.RandomChatActivity"
+            android:exported="true" />
+        <activity
             android:name=".domain.signin.SigninActivity"
             android:exported="true">
             <intent-filter>

@@ -9,6 +9,8 @@ import com.e.kotlin_random_chat.api.response.ApiResponse
 import com.e.kotlin_random_chat.api.response.SigninResponse
 import com.e.kotlin_random_chat.databinding.ActivitySigninBinding
 import com.e.kotlin_random_chat.domain.auth.Auth
+import com.e.kotlin_random_chat.domain.randomchat.RandomChatActivity
+import splitties.activities.start
 import java.lang.ref.WeakReference
 
 class SigninActivity : AppCompatActivity() , SigninNavigator {
@@ -36,7 +38,7 @@ class SigninActivity : AppCompatActivity() , SigninNavigator {
     }
 
     override fun startRandomChatActivity(response: ApiResponse<SigninResponse>) {
-        //TODO : start RandomChatActivity
+        start<RandomChatActivity>()
         finish()
     }
 }
