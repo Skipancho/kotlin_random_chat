@@ -24,7 +24,7 @@ object Prefs {
             .putString(REFRESH_TOKEN,value)
             .apply()
 
-    var nickname
+    var nickName
         get() = prefs.getString(USER_NAME, null)
         set(value) = prefs.edit()
             .putString(USER_NAME,value)
