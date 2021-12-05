@@ -34,7 +34,7 @@
                 android:padding="10dp"
                 android:text="@={viewModel.inputMessage}"/>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="0"
