@@ -47,7 +47,7 @@ class RandomChatViewModel(app : Application)
 
             messages.add(messageModel)
 
-            viewModelScope.launch(Dispatchers.IO) {
+            viewModelScope.launch(Dispatchers.Main) {
                 navigator?.onMessage(messageModel)
             }
 
