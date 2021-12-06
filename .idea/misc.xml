@@ -3,13 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.38229166666666664" />
         <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/drawable/button_box_send.xml" value="0.38229166666666664" />
+        <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/drawable/ic_baseline_chat_108.xml" value="0.38229166666666664" />
+        <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/drawable/ic_baseline_chat_24.xml" value="0.38229166666666664" />
+        <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/drawable/ic_launcher_background.xml" value="0.38229166666666664" />
         <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/drawable/message_box.xml" value="0.1814814814814815" />
         <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/drawable/message_box_by_receiver.xml" value="0.38229166666666664" />
+        <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/drawable/message_box_by_sender.xml" value="0.38229166666666664" />
         <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/layout/activity_random_chat.xml" value="0.36614583333333334" />
         <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/layout/activity_signin.xml" value="0.3515625" />
         <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/layout/message_by_receiver.xml" value="0.36614583333333334" />
         <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/layout/message_by_sender.xml" value="0.33" />
+        <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.38229166666666664" />
+        <entry key="..\:/my_Project/kotlin_random_chat/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.38229166666666664" />
       </map>
     </option>
   </component>
