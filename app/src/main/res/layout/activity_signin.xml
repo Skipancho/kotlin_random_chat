@@ -18,13 +18,19 @@
         android:gravity="center"
         tools:context = ".domain.signin.SigninActivity">
 
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_baseline_chat_24"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Random Chat"
             android:textAlignment="center"
             android:textSize="24dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#3A1D1D"/>
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/nickName"
@@ -32,19 +38,22 @@
             android:layout_height="wrap_content"
             android:hint="Enter your nick name"
             android:layout_marginTop="50dp"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"
             android:padding="10dp"
             android:singleLine="true"
             android:text="@={viewModel.nickName}"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:textColor="@color/white"
-            android:background="@color/teal_200"
+            android:background="#3A1D1D"
             android:textStyle="bold"
             android:onClick="@{(v) -> viewModel.signIn()}"
-            android:text="채팅 시작하기" />
+            android:text="START" />
 
     </LinearLayout>
 
