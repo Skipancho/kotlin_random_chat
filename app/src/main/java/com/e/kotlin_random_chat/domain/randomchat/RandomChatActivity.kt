@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.e.kotlin_random_chat.R
 import com.e.kotlin_random_chat.databinding.ActivityRandomChatBinding
+import splitties.toast.toast
 import java.lang.ref.WeakReference
 
 class RandomChatActivity : AppCompatActivity(), RandomChatNavigator {
@@ -52,5 +53,16 @@ class RandomChatActivity : AppCompatActivity(), RandomChatNavigator {
             val lastPosition = adapter.itemCount - 1
             binding.conversation.smoothScrollToPosition(lastPosition)
         }
+    }
+
+    private var lastTimeBackPressed : Long  = 0
+
+    override fun onBackPressed() {
+        if (System.currentTimeMillis()-lastTimeBackPressed < 1500){
+            viewModel.onClosed()
+            return
+        }
+        toast("뒤로가기를 한 번 더 눌러 채팅방을 나갑니다.")
+        lastTimeBackPressed = System.currentTimeMillis()
     }
 }
